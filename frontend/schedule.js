@@ -1,15 +1,10 @@
 
-function createScheduleMain(legacyCourses) {
+function createScheduleMain(legacyCourses, userCourses) {
     // let assignment= [];
     // for (let i = 0; i < legacyCourses.length; i++) {
     //     assignment.push(legacyCourses[i].assignments)
     // }
     let assignments = [].concat(...legacyCourses.map(course => course.assignments));
-
-    let userCourses = [
-        {summary: 'CPSC 310 202', startDate: 1673388000, endDate: 1673393400},
-        {summary: 'CPSC 310 202', startDate: 1673560800, endDate: 1673566200}
-    ];
 
     console.log("Legacy Courses: ", legacyCourses)
     console.log("Assignment: ", assignments)
@@ -17,41 +12,18 @@ function createScheduleMain(legacyCourses) {
     console.log(schedule)
 }
 
-createScheduleMain(
-    [
-        {
-            "name": "CPSC310",
-            "assignments":
-            [
-                {
-                    "name": "Assignment 1",
-                    "due_date": "2023-01-25",
-                    "duration": "5"
-                }
-                // {
-                //     "name": "Assignment 2",
-                //     "due_date": "Feb 16",
-                //     "duration": "7"
-                // },
-                // {
-                //     "name": "Assignment 3",
-                //     "due_date": "Mar 01",
-                //     "duration": "12"
-                // },
-                // {
-                //     "name": "Assignment 4",
-                //     "due_date": "Apr 7",
-                //     "duration": "18"
-                // }
-            ]
-        }
-    ]
-)
+let legacyCourses;
+axios.get('localhost:5000/get_courses')
+  .then(response => {
+    legacyCourses = response.data;
+    console.log(response.data);
+  })
+  .catch(error => {
+    // handle error
+    console.log(error);
+  });
 
-
-
-
-
+createScheduleMain(legacyCourses, [])
 
 function createSchedule(courses, assignments, currentDate) {
     // Initialize an empty schedule
@@ -90,9 +62,9 @@ function createSchedule(courses, assignments, currentDate) {
                 let endTime = new Date(timeSlot.startTime)
                 endTime.setHours(endTime.getHours() + 5)
                 schedule.push({
-                    assignmentId: assignment.name,
-                    startTime: timeSlot.startTime,
-                    endTime: new Date(endTime) 
+                    title: assignment.name,
+                    start: timeSlot.startTime,
+                    end: new Date(endTime) 
                 });
                 break;
             } else {
