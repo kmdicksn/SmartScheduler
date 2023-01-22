@@ -1,4 +1,4 @@
 [
-{ "uid": 1, "email": "dickson.ngan@ubc.ca", "password": "dickson", "personality": "night" },
-{ "uid": 2, "email": "admin", "password": "notadmin", "personality": "morning" }
+{ "uid": 1, "email": "dickson.ngan@ubc.ca", "name": "dickson", "password": "dickson", "personality": "night" },
+{ "uid": 2, "email": "admin", "name": "god", "password": "notadmin", "personality": "morning" }
 ]
