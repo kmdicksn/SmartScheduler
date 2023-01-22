@@ -40,7 +40,7 @@ for (let i = 0; i < courses.length; i++) {
     }
 }
 
-// Define objective function
+// The objective is to minimize the value of priority * daysToDue so that the ones with the highest priority and closest due time get scheduled first
 let objective = model.Objective();
 for (let i = 0; i < courses.length; i++) {
     for (let j = 0; j < courses[i].assignments.length; j++) {
