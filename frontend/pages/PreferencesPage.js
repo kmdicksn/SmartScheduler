@@ -13,21 +13,22 @@ const Toolbar = styled('div')(({ theme }) => ({
     marginTop: 40,
 }));
 
-const PreferencesPage = () => {
+const PreferencesPage = ({ courses, onConfirm, onBack }) => {
     return (
         <div style={{
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
             textAlign: 'center',
-            minWidth: '40vw'
+            minWidth: '40vw',
+            margin: 50
         }}>
             <CssBaseline />
-            <Text style={{fontSize: 36, fontWeight: 600, marginBottom: 60}}>Just to confirm some last minute<br/>details.</Text>
-            <CoursesTable/>
+            <Text style={{fontSize: 36, fontWeight: 700, marginBottom: 60}}>Just to double check, does<br/>everything look good?</Text>
+            <CoursesTable courses={courses}/>
             <Toolbar>
-                <Button variant='outlined' style={{width: '10vw', textTransform: 'none'}}>Go Back</Button>
-                <Button variant="contained" style={{backgroundColor: '#537A5A', color: 'white', width: '15vw', textTransform: 'none'}}>Looks Good!</Button>
+                <Button variant='outlined' style={{width: '10vw', textTransform: 'none'}} onClick={onBack}>Go Back</Button>
+                <Button variant="contained" style={{backgroundColor: '#537A5A', color: 'white', width: '15vw', textTransform: 'none'}} onClick={onConfirm}>Looks Good!</Button>
             </Toolbar>
         </div>
     )

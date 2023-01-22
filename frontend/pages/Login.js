@@ -26,7 +26,7 @@ export default function SignIn() {
     };
 
     return (
-        <div>
+        <div style={{margin: 50}}>
             <CssBaseline />
             <Box
                 sx={{
@@ -39,7 +39,7 @@ export default function SignIn() {
                 }}
             >
                 <Typography component="h1" variant="h5 bold">
-                    Welcome Back!
+                    Welcome back!
                 </Typography>
                 <Box component="form" onSubmit={handleSubmit} noValidate>
                     <TextField

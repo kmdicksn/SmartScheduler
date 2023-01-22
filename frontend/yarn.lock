@@ -1661,6 +1661,10 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
+"@mobiscroll/react@https://npm.mobiscroll.com/@mobiscroll/react-trial/-/react-trial-5.21.2.tgz":
+  version "5.21.2"
+  resolved "https://npm.mobiscroll.com/@mobiscroll/react-trial/-/react-trial-5.21.2.tgz#d3eed58b9400ea737d4d842ccc8f2902f11eb2d4"
+
 "@mui/base@5.0.0-alpha.114":
   version "5.0.0-alpha.114"
   resolved "https://registry.yarnpkg.com/@mui/base/-/base-5.0.0-alpha.114.tgz#19125f28b7d09d1cc60550872440ecba699d8374"
@@ -5745,6 +5749,11 @@ iconv-lite@0.4.24:
   dependencies:
     safer-buffer ">= 2.1.2 < 3"
 
+ics-to-json@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/ics-to-json/-/ics-to-json-1.0.0.tgz#aceba0d995ecbd769069d8c033eb281f926beb98"
+  integrity sha512-J2bvEGr2BKsdV7WTmOKXr1ksFeujR+dFwM5yxWu3cODq3HduwcIZQjSsYinmSpa3FxlvzVqtfuBbw7Q/g0FWGw==
+
 icss-utils@^4.0.0, icss-utils@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/icss-utils/-/icss-utils-4.1.1.tgz#21170b53789ee27447c2f47dd683081403f9a467"
@@ -7313,6 +7322,11 @@ mkdirp@^1.0.3, mkdirp@^1.0.4:
   version "1.0.4"
   resolved "https://registry.npmjs.org/mkdirp/-/mkdirp-1.0.4.tgz"
   integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
+
+moment@^2.29.4:
+  version "2.29.4"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.4.tgz#3dbe052889fe7c1b2ed966fcb3a77328964ef108"
+  integrity sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==
 
 move-concurrently@^1.0.1:
   version "1.0.1"

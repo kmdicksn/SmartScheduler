@@ -5,6 +5,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Button from "@mui/material/Button";
 import PriorityLabels from "./PriorityLabels";
 import {useDropzone} from "react-dropzone";
+import icsToJson from 'ics-to-json'
 
 const BorderBox = styled('div')(({theme}) => ({
     minWidth: '40vw',
@@ -31,9 +32,10 @@ const UploadIcon = () => {
     )
 }
 
-const FileUpload = () => {
-    const onDrop = useCallback(acceptedFiles => {
-        console.log(acceptedFiles);
+const FileUpload = ({ onUpload }) => {
+
+    const onDrop = useCallback( async (file) => {
+        onUpload(file[0])
     }, [])
     const {getRootProps} = useDropzone({onDrop})
 
