@@ -6,22 +6,22 @@
             [
                 {
                     "name": "Assignment 1",
-                    "due_date": "Jan 28",
+                    "due_date": "2023-01-28",
                     "duration": "5"
                 },
                 {
                     "name": "Assignment 2",
-                    "due_date": "Feb 16",
+                    "due_date": "2023-02-16",
                     "duration": "7"
                 },
                 {
                     "name": "Assignment 3",
-                    "due_date": "Mar 01",
+                    "due_date": "2023-03-01",
                     "duration": "12"
                 },
                 {
                     "name": "Assignment 4",
-                    "due_date": "Apr 7",
+                    "due_date": "2023-04-07",
                     "duration": "18"
                 }
             ]
@@ -32,27 +32,27 @@
             [
                 {
                     "name": "Assignment 1",
-                    "due_date": "Jan 23",
+                    "due_date": "2023-01-23",
                     "duration": "6"
                 },
                 {
                     "name": "Assignment 2",
-                    "due_date": "Feb 14",
+                    "due_date": "2023-02-14",
                     "duration": "7"
                 },
                 {
                     "name": "Assignment 3",
-                    "due_date": "Feb 27",
+                    "due_date": "2023-02-27",
                     "duration": "12"
                 },
                 {
                     "name": "Assignment 4",
-                    "due_date": "Mar 15",
+                    "due_date": "2023-03-15",
                     "duration": "18"
                 },
                 {
                     "name": "Assignment 5",
-                    "due_date": "Apr 01",
+                    "due_date": "2023-04-01",
                     "duration": "25"
                 }
             ]
@@ -63,17 +63,17 @@
             [
                 {
                     "name": "Assignment 1",
-                    "due_date": "Feb 01",
+                    "due_date": "2023-02-01",
                     "duration": "3"
                 },
                 {
                     "name": "Assignment 2",
-                    "due_date": "Mar 01",
+                    "due_date": "2023-03-01",
                     "duration": "7"
                 },
                 {
                     "name": "Assignment 3",
-                    "due_date": "Apr 01",
+                    "due_date": "2023-04-01",
                     "duration": "9"
                 }
             ]
