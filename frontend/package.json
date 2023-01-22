@@ -15,6 +15,7 @@
     "@mobiscroll/react": "https://npm.mobiscroll.com/@mobiscroll/react-trial/-/react-trial-5.21.2.tgz",
     "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.11.5",
+    "axios": "^1.2.3",
     "expo": "~47.0.12",
     "expo-status-bar": "~1.4.2",
     "ics-to-json": "^1.0.0",
