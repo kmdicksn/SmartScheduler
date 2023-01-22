@@ -1,0 +1,4 @@
+[
+{ "uid": 1, "email": "dickson.ngan@ubc.ca", "password": "dickson", "personality": "night" },
+{ "uid": 2, "email": "admin", "password": "notadmin", "personality": "morning" }
+]

@@ -1,0 +1,82 @@
+[
+    { "courses": [
+        {
+            "name": "CPSC310",
+            "assignments":
+            [
+                {
+                    "name": "Assignment 1",
+                    "due_date": "Jan 28",
+                    "duration": "5"
+                },
+                {
+                    "name": "Assignment 2",
+                    "due_date": "Feb 16",
+                    "duration": "7"
+                },
+                {
+                    "name": "Assignment 3",
+                    "due_date": "Mar 01",
+                    "duration": "12"
+                },
+                {
+                    "name": "Assignment 4",
+                    "due_date": "Apr 7",
+                    "duration": "18"
+                }
+            ]
+        },
+        {
+            "name": "CPSC317",
+            "assignments":
+            [
+                {
+                    "name": "Assignment 1",
+                    "due_date": "Jan 23",
+                    "duration": "6"
+                },
+                {
+                    "name": "Assignment 2",
+                    "due_date": "Feb 14",
+                    "duration": "7"
+                },
+                {
+                    "name": "Assignment 3",
+                    "due_date": "Feb 27",
+                    "duration": "12"
+                },
+                {
+                    "name": "Assignment 4",
+                    "due_date": "Mar 15",
+                    "duration": "18"
+                },
+                {
+                    "name": "Assignment 5",
+                    "due_date": "Apr 01",
+                    "duration": "25"
+                }
+            ]
+        },
+        {
+            "name": "CPSC221",
+            "assignments":
+            [
+                {
+                    "name": "Assignment 1",
+                    "due_date": "Feb 01",
+                    "duration": "3"
+                },
+                {
+                    "name": "Assignment 2",
+                    "due_date": "Mar 01",
+                    "duration": "7"
+                },
+                {
+                    "name": "Assignment 3",
+                    "due_date": "Apr 01",
+                    "duration": "9"
+                }
+            ]
+        }
+    ]}
+]
