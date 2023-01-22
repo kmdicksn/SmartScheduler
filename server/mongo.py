@@ -28,7 +28,6 @@ def test_param():
 
 @app.route('/authenticate')
 def authenticate_user():
-
     user_id = request.args.get('userId')
     password = (collection.find_one({"email": user_id}))["password"]
     return jsonify({'password': password})
