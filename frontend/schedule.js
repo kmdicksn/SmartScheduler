@@ -6,22 +6,13 @@ function createScheduleMain(legacyCourses, userCourses) {
     // }
     let assignments = [].concat(...legacyCourses.map(course => course.assignments));
 
-    console.log("Legacy Courses: ", legacyCourses)
-    console.log("Assignment: ", assignments)
-    let schedule = createSchedule(userCourses, assignments, new Date())
-    console.log(schedule)
+    console.log("Legacy Courses: ", legacyCourses);
+    console.log("Assignment: ", assignments);
+    let schedule = createSchedule(userCourses, assignments, new Date());
+    console.log(schedule);
 }
 
 let legacyCourses;
-axios.get('localhost:5000/get_courses')
-  .then(response => {
-    legacyCourses = response.data;
-    console.log(response.data);
-  })
-  .catch(error => {
-    // handle error
-    console.log(error);
-  });
 
 createScheduleMain(legacyCourses, [])
 

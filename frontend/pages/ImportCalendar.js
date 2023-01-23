@@ -6,10 +6,19 @@ import icsToJson from "ics-to-json";
 import {Loading, PreferencesPage} from "./index";
 import moment from "moment";
 
-const ImportCalendar = ({ }) => {
+const ImportCalendar = ({ setSchedule }) => {
     const [ courses, setCourses ] = React.useState([]);
     const [ confirm, setConfirm ] = React.useState(false);
     const [ loading, setLoading ] = React.useState(false);
+
+    //setloading to false after 5 seconds of being set true
+    React.useEffect(() => {
+        if (loading) {
+            setTimeout(() => {
+                setLoading(false);
+            }, 5000);
+        }
+    }, [loading]);
 
     const onUpload = async (file) => {
         const icsData = await file.text()
